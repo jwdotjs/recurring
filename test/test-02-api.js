@@ -933,3 +933,40 @@ describe('Prerequsites', () => {
     recurly.setAPIKey(config.apikey)
   })
 })
+
+describe('Purchase', () => {
+  // create a purchase.
+  it('can create a purchase', done => {
+    const accountCode = uuid.v4()
+
+    const subscription1 = {
+      plan_code: config.plan_code
+    }
+
+    const data = {
+      currency: 'USD',
+      subscriptions: [subscription1],
+      account: {
+        account_code: accountCode,
+        billing_info: {
+          address1: '400 Alabama St',
+          city: 'San Francisco',
+          country: 'US',
+          first_name: 'Benjamin',
+          last_name: 'Du Monde',
+          month: 12,
+          number: '4111-1111-1111-1111',
+          state: 'CA',
+          year: 2019,
+          zip: 94110
+        }
+      }
+    }
+
+    recurly.Purchase().create(data, (err, newPurchase) => {
+      demand(err).not.exist()
+      newPurchase.must.be.an.object()
+      done()
+    })
+  })
+})
