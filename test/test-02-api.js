@@ -252,7 +252,7 @@ describe('BillingInfo', () => {
       address2: 'Suite 500',
       city: 'San Francisco',
       state: 'CA',
-      country: 'USA',
+      country: 'US',
       zip: '94102'
     }
 
@@ -277,7 +277,7 @@ describe('BillingInfo', () => {
       address2: 'Suite 500',
       city: 'San Francisco',
       state: 'CA',
-      country: 'USA',
+      country: 'US',
       zip: '94102'
     }
 
@@ -344,7 +344,7 @@ describe('Subscription', () => {
   //       address2: 'Suite 500',
   //       city: 'San Francisco',
   //       state: 'CA',
-  //       country: 'USA',
+  //       country: 'US',
   //       zip: '94102'
   //     }
   //
@@ -870,7 +870,7 @@ describe('RecurlyError', () => {
         address2: 'Suite 500',
         city: 'San Francisco',
         state: 'CA',
-        country: 'USA',
+        country: 'US',
         zip: '94102'
       }
 
