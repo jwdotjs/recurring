@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<purchase>
+  <account>
+    <account_code>7</account_code>
+    <billing_info>
+      <address1>400 Alabama St</address1>
+      <city>San Francisco</city>
+      <country>US</country>
+      <first_name>Benjamin</first_name>
+      <last_name>Du Monde</last_name>
+      <month>12</month>
+      <number>4111-1111-1111-1111</number>
+      <state>CA</state>
+      <year>2019</year>
+      <zip>94110</zip>
+    </billing_info>
+  </account>
+  <collection_method>automatic</collection_method>
+  <currency>USD</currency>
+  <customer_notes>Some notes for the customer.</customer_notes>
+  <terms_and_conditions>Our company terms and conditions.</terms_and_conditions>
+  <vat_reverse_charge_notes>Vat reverse charge notes.</vat_reverse_charge_notes>
+  <subscriptions>
+    <subscription>
+      <plan_code>recurring-test</plan_code>
+    </subscription>
+  </subscriptions>
+</purchase>
