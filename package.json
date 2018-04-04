@@ -1,9 +1,10 @@
 {
-  "name": "recurring",
+  "name": "@elm-street-technology/recurring",
   "description": "a recurly v2 api client for node.js",
   "version": "2.7.0",
-  "bugs": "http://github.com/ceejbot/recurring/issues",
+  "bugs": "https://github.com/elm-street-technology/recurring/issues",
   "contributors": [
+    "Matt Lorey <mattlorey@gmail.com>",
     "C J Silverio <ceejceej@gmail.com> (http://ceejbot.github.io/)",
     "Julian Gautier <julian.gautier@alumni.neumont.edu> (http://www.juliangautier.com/)",
     "Simon Tabor",
