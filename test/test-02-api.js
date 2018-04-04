@@ -940,17 +940,44 @@ describe('Purchase', () => {
     const accountCode = uuid.v4()
 
     const subscription1 = {
-      plan_code: config.plan_code,
-      currency: 'USD'
+      plan_code: config.plan_code
     }
 
-    const data = {
+    const subscription2 = {
+      plan_code: 'recurring-test2'
+    }
+
+   /* const data = {
       account: {
         account_code: accountCode
       },
       subscriptions: [subscription1]
     }
-    console.log('data', data)
+    console.log('data', data) */
+
+  /*  const subscription1 = {
+      plan_code: 'dmsannualprepaid'
+    } */
+
+    const data = {
+      currency: 'USD',
+      subscriptions: [subscription1],
+      account: {
+        account_code: accountCode,
+        billing_info: {
+          address1: '400 Alabama St',
+          city: 'San Francisco',
+          country: 'US',
+          first_name: 'Benjamin',
+          last_name: 'Du Monde',
+          month: 12,
+          number: '4111-1111-1111-1111',
+          state: 'CA',
+          year: 2019,
+          zip: 94110
+        }
+      }
+    }
 
     recurly.Purchase().create(data, (err, newPurchase) => {
       console.log('err', err)
